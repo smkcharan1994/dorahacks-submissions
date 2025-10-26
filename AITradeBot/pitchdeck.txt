@@ -1,0 +1,5 @@
+Problem: Manual crypto trading is risky and requires constant attention.
+Solution: AITradeBot automates decision-making and execution using AI + smart contracts.
+Impact: Brings AI-powered DeFi tools to emerging markets, enhancing accessibility and trust.
+Revenue: Subscription-based access to advanced AI strategies.
+Technology: Hedera EVM smart contracts + Python AI logic.
