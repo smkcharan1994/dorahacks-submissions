@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Somnia Smart Yield Bot — UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Somnia Smart Yield Bot</h1>
+    <p id="status">Status: Not connected</p>
+
+    <div class="controls">
+      <button id="connectBtn">Connect Wallet</button>
+    </div>
+
+    <div class="actions">
+      <div class="row">
+        <label>Contract Address</label>
+        <input id="contractAddress" value="0x7EF2e0048f5bAeDe046f6BF797943daF4ED8CB47"/>
+        <button id="setAddressBtn">Set</button>
+      </div>
+
+      <div class="row">
+        <label>Deposit (wei)</label>
+        <input id="depositAmount" placeholder="e.g., 1000000000000000000" />
+        <button id="depositBtn">Deposit</button>
+      </div>
+
+      <div class="row">
+        <label>Withdraw (wei)</label>
+        <input id="withdrawAmount" placeholder="Amount in wei" />
+        <button id="withdrawBtn">Withdraw</button>
+      </div>
+
+      <div class="row">
+        <label>Simulate Profit (%)</label>
+        <input id="profitPercent" placeholder="e.g., 5" />
+        <button id="simulateBtn">Simulate (owner only)</button>
+      </div>
+
+      <div class="row">
+        <button id="refreshBtn">Refresh Total Deposits</button>
+        <p id="totalDeposits">Total Deposits: -</p>
+      </div>
+
+      <div id="logs"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
